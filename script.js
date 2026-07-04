@@ -77,7 +77,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
   function render(repos) {
     repos = repos
-      .filter(r => !r.fork || ['InternOps','Skillnova','Ai-Mentor'].includes(r.name)) // keep the meaningful ones
+      .filter(r => !r.fork || ['InternOps','Skillnova','Ai-Mentor','MocktailMagic'].includes(r.name)) // keep the meaningful ones
       .slice(0, 8);
     if (!repos.length) { repos = FALLBACK; }
     repoCountEl.textContent = repos.length + '+';
